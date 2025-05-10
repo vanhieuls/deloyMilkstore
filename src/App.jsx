@@ -6,7 +6,7 @@ import {
   useLocation,
   Navigate
 } from 'react-router-dom';
-import Header from './components/Header/Header';
+import Header from './components/header/Header';
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
 import Home from './pages/Home/Home';
@@ -14,7 +14,7 @@ import Contact from './pages/Contact/Contact';
 import Products from './pages/Products/Products';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
 import About from './pages/About/About';
-import Footer from './components/Footer/Footer';
+import Footer from './components/footer/Footer';
 import Payment from './pages/Payment/Payment';
 import Checkout from './pages/Order/Checkout';
 import Cart from './pages/Cart/Cart';
@@ -63,7 +63,7 @@ const AppRoutes = () => {
         <Route path='/san-pham' element={<Products />} />
         <Route path='/lien-he' element={<Contact />} />
         <Route path='/:category/:productName' element={<ProductDetail />} />
-        
+
         {/* Ví dụ các route cần xác thực */}
         <Route path='/thanh-toan' element={
           <ProtectedRoute>
@@ -80,7 +80,7 @@ const AppRoutes = () => {
             <Payment/>
           </ProtectedRoute>
         }/>
-        
+
         <Route path='/chinh-sach-van-chuyen' element={<TransferPolicy/>}/>
         <Route path='/huong-dan-mua-hang' element={<PurchaseGuide />} />
         <Route path='/chinh-sach-doi-tra' element={<ReturnPolicy />} />
